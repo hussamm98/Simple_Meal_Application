@@ -76,7 +76,7 @@ class MealItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        margin: EdgeInsets.all(15),
+        margin: EdgeInsets.all(25),
         child: Column(
           children: [
             Stack(

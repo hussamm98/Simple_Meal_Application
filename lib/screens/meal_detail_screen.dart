@@ -24,12 +24,12 @@ class MealDetailScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(color: Colors.grey),
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(20),
       ),
       margin: EdgeInsets.all(5),
       padding: EdgeInsets.all(15),
-      height: 150,
-      width: 300,
+      height: 200,
+      width: 350,
       child: child,
     );
   }
@@ -48,7 +48,7 @@ class MealDetailScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 300,
+              height: 350,
               width: double.infinity,
               child: Image.network(
                 selectedMeal.imageUrl,

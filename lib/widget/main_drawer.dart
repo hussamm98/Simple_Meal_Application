@@ -6,12 +6,12 @@ class MainDrawer extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon,
-        size: 26,
+        size: 30,
       ),
       title: Text(
         title,
         style: TextStyle(
-            fontSize: 24,
+            fontSize: 30,
             fontFamily: "RobotoCondensed",
             fontWeight: FontWeight.bold),
       ),
@@ -25,7 +25,7 @@ class MainDrawer extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 120,
+            height: 200,
             width: double.infinity,
             padding: EdgeInsets.all(20),
             color: Theme.of(context).accentColor,
@@ -40,9 +40,12 @@ class MainDrawer extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 50,
           ),
           buildListTile("Meal", Icons.restaurant, () {Navigator.of(context).pushReplacementNamed('/');}),
+          SizedBox(
+            height: 10,
+          ),
           buildListTile("Filters", Icons.settings, () {Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);}),
         ],
       ),
